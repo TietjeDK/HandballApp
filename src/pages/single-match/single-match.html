@@ -1,0 +1,85 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        <img class="title-image" alt="logo" height="40" src="assets/img/logo2.png" >
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content>
+
+      <!-- Header content with background -->
+      <div class="background_image_header text-center">
+          <div class="match-header-wrapper">
+        <br>
+  
+        <!-- Item title -->
+        <h4 class="headline">
+          {{ item.homeTeamName }} <br /> - <br /> {{ item.awayTeam }}
+        </h4>
+        <!-- End of Item title -->
+  
+        <br>
+  
+        <!-- Item Category -->
+        <a class="btn__line__square__white">
+          {{ item.date }}
+        </a>
+        <!-- End of Item Category -->
+  
+        <br>
+        <br>
+        <br>
+  
+      </div>
+      <!-- End of Header Content -->
+  </div>
+  <ion-segment [(ngModel)]="selectedSegment">
+      
+      <ion-segment-button value="game">
+        Optakt
+      </ion-segment-button>
+      <ion-segment-button value="players">
+          Spillere
+        </ion-segment-button>
+      <ion-segment-button value="score">
+        Resultat
+      </ion-segment-button>
+    </ion-segment>
+      <!-- Content Description -->
+      
+      <div class="item__content" *ngIf="selectedSegment == 'players'">
+        <div class="player-row" *ngFor="let player of item.players" >
+          <p class="player-name" (click)="playerTapped($event, player)" >
+              <strong>{{player.position}}:</strong>
+                  {{player.name}}
+          </p>
+          <button ion-button icon-end class="star-player" (click)="starTapped($event, player)">
+              Stem
+            </button>
+        </div>
+      </div>
+      <div class="item__content" *ngIf="selectedSegment == 'game'">
+          <h5 class="game-header">Kampsponsor</h5>
+          <img src="{{item.sponsorImg}}" class="sponsor-image" />
+        <h4 class="game-header">Kampoptakt</h4>
+          <p class="game-description">
+            {{item.description}}
+          </p>
+  
+        </div>
+        <div class="item__content" *ngIf="selectedSegment == 'score'">
+          <p class="time">{{item.time | time}}</p>
+            <div class="col-50">
+                <p class="score-teamname">KH</p> 
+                <p class="score-score">{{item.homeTeamScore}}</p>
+            </div>  
+            <div class="col-50">
+                <p class="score-teamname">{{item.awayTeam}}</p>
+                <p class="score-score">{{item.awayTeamScore}}</p>  
+            </div>  
+        </div>
+      <!-- End of Content Description -->
+  
+  </ion-content>
+  

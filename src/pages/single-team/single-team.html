@@ -1,0 +1,51 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        <img class="title-image" alt="logo" height="40" src="assets/img/logo2.png" >
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content>
+  
+      <!-- Header content with background -->
+      <div class="background_image_header text-center">
+          <div class="match-header-wrapper">
+        <br>
+  
+        <!-- Item title -->
+        <h3 class="headline">
+          {{ item.name }} {{ item.gender }}
+        </h3>
+        <!-- End of Item title -->
+  
+        <br>
+  
+        <!-- Item Category -->
+        <a class="btn__line__square__white">
+          {{ item.division }}
+        </a>
+        <!-- End of Item Category -->
+  
+        <br>
+        <br>
+        <br>
+  
+      </div>
+    </div>
+      <!-- End of Header Content -->
+  
+      <!-- Content Description -->
+      <div class="item__content">
+          <div class="player-row" *ngFor="let player of players" >
+              <p class="player-name" (click)="playerTapped($event, player)" >
+                  <strong>{{player.position}}:</strong>
+                      {{player.name}}
+              </p>
+            </div>
+
+      </div>
+      <!-- End of Content Description -->
+  
+  </ion-content>
+  

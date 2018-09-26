@@ -1,0 +1,361 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+// Adding a title image in all headers
+.title-image {
+    margin-top: 9px;
+    height: 25px;
+    text-align: center;
+}
+
+// Global style to center all text like in Bootstrap
+.text-center {
+    text-align: center;
+}
+.col-50 {
+  width: 50%;
+  float: left;
+}
+
+// ----------------------------------------------------------------------------------
+// Page Styling
+// ----------------------------------------------------------------------------------
+.scroll-content {
+  background-color: $grey;
+}
+
+// ----------------------------------------------------------------------------------
+// Global back button styling
+// ----------------------------------------------------------------------------------
+.back-button {
+    color: $black !important;//what ever the color you like
+}
+
+// ----------------------------------------------------------------------------------
+// Typography
+// ----------------------------------------------------------------------------------
+
+p {
+  font-size: $base-font-size;
+	line-height: $base-line-height;
+  font-weight: $base-font-weight;
+  letter-spacing: $base-letter-spacing;
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  font-size: 38px;
+	line-height: $headline-line-height;
+  font-weight: $headline-font-weight;
+  letter-spacing: $headline-letter-spacing;
+}
+h2 {
+  font-size: 34px;
+	line-height: $headline-line-height;
+  font-weight: $headline-font-weight;
+  letter-spacing: $headline-letter-spacing;
+}
+h3 {
+  font-size: 30px;
+	line-height: $headline-line-height;
+  font-weight: $headline-font-weight;
+  letter-spacing: $headline-letter-spacing;
+}
+h4 {
+  font-size: 26px;
+	line-height: $headline-line-height;
+  font-weight: $headline-font-weight;
+  letter-spacing: $headline-letter-spacing;
+}
+h5 {
+  font-size: 22px;
+	line-height: $headline-line-height;
+  font-weight: $headline-font-weight;
+  letter-spacing: $headline-letter-spacing;
+}
+h6 {
+  font-size: 20px;
+	line-height: $headline-line-height;
+  font-weight: $headline-font-weight;
+  letter-spacing: $headline-letter-spacing;
+}
+ul li {
+  font-size: $base-font-size;
+	line-height: $base-line-height;
+  font-weight: $base-font-weight;
+  letter-spacing: $base-letter-spacing;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding-left: 1em;
+  text-indent: -.7em;
+}
+
+li::before {
+  content: "• ";
+  color: $black;
+  font-size: 20px;
+}
+@media screen and (max-width: 325px) {
+  p {
+    font-size: 16px;
+  	line-height: $base-line-height;
+    font-weight: $base-font-weight;
+    letter-spacing: $base-letter-spacing;
+  }
+  ul li {
+    font-size: 16px;
+  	line-height: $base-line-height;
+    font-weight: $base-font-weight;
+    letter-spacing: $base-letter-spacing;
+  }
+}
+// ----------------------------------------------------------------------------------
+// Buttons
+// ----------------------------------------------------------------------------------
+a {
+  text-decoration: none;
+}
+.btn__line__large__white {
+    font-size: 14px;
+    font-weight: $bold;
+    line-height: 1;
+    border-radius: 500px;
+    padding: 18px 48px 16px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border-width: 0;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    color: $white;
+    box-shadow: 0 0 0 2px #fff inset;
+    background-color: transparent;
+}
+.btn__line__small__white {
+    font-size: 13px;
+    font-weight: $bold;
+    line-height: 1;
+    border-radius: 500px;
+    padding: 12px 30px 12px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border-width: 0;
+    letter-spacing: 2px;
+    min-width: 100px;
+    text-transform: uppercase;
+    white-space: normal;
+    color: $white;
+    box-shadow: 0 0 0 2px #fff inset;
+    background-color: transparent;
+}
+.btn__line__square__white {
+    font-size: 13px;
+    font-weight: $bold;
+    line-height: 1;
+    border-radius: 5px;
+    padding: 10px 20px 10px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border-width: 0;
+    letter-spacing: 1px;
+    min-width: 100px;
+    text-transform: uppercase;
+    white-space: normal;
+    color: $white;
+    box-shadow: 0 0 0 2px #fff inset;
+    background-color: transparent;
+}
+.btn__solid__blue {
+    border: 0;
+    border-radius: 4px;
+    padding: 10px 20px 10px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: $medium;
+    letter-spacing: 1px;
+    background-color: $blue;
+    color: $white;
+    text-shadow: none;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+/* Topbar */
+.toolbar-background-ios {
+  background: #c80017;
+}
+.title-image {
+  margin-top: 9px;
+  height: 31px;
+  text-align: center;
+}
+.back-button {
+  color: #fff !important;
+}
+ion-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: block;
+  width: 100%;
+  background-color: #c80817;
+}
+.header-title {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+/* Tab bar */
+.tabs-ios .tabbar {
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-top: 0.55px solid rgba(0, 0, 0, 0.3);
+  background: #c90817;
+}
+.tabs-ios .tab-button {
+  padding: 0 2px;
+  max-width: 240px;
+  min-height: 49px;
+  font-size: 10px;
+  color: #ffffff;
+}
+.tabs-ios .tab-button-icon {
+  margin-top: 4px;
+  margin-bottom: 1px;
+  min-width: 35px;
+  height: 30px;
+  font-size: 30px;
+  color: #ffffff;
+}
+.tabs-ios .tab-button[aria-selected=true] .tab-button-icon {
+  color: #ffffff;
+}
+.tabs-ios .tab-button:hover:not(.disable-hover), .tabs-ios .tab-button[aria-selected=true] {
+  color: #ffffff;
+}
+
+ion-icon {
+  &[class*="custom-"] {
+      vertical-align: middle;
+      $sz: 20px;
+      width: $sz;
+      height: $sz;
+  } // custom icons
+  &[class*="home"] {
+      background: url(../assets/icon/house-outline.png) no-repeat 50% 50%;
+      background-size: contain;
+  }
+  &[class*="players"] {
+      background: url(../assets/icon/soccer-jersey.png) no-repeat 50% 50%;
+      background-size: contain;
+  }
+  &[class*="teams"] {
+    background: url(../assets/icon/football-jersey.png) no-repeat 50% 50%;
+    background-size: contain;
+}
+  }
+  
+  
+
+/* Match overview */
+.image__padding {
+  padding: 20px!important;
+}
+
+
+/* Match */
+
+.match-header-wrapper {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.segment-ios .segment-button:last-of-type {
+  margin-left: 0;
+  border-left-width: 0;
+  border-radius: 0;
+}
+.segment-ios .segment-button:first-of-type {
+  margin-right: 0;
+  border-radius: 0;
+}
+.segment-ios .segment-button.segment-activated {
+  color: #fff;
+  background-color: #12317b;
+  opacity: 1;
+  transition: 100ms all linear;
+}
+.segment-ios .segment-button {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 0;
+  height: 3.2rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #12317b;
+  font-size: 1.3rem;
+  line-height: 3rem;
+  color: #12317b;
+  background-color: transparent;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+p.game-description {
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 2;
+}
+.game-header{
+  text-align: center;
+}
+
+button.star-player {
+  font-size: 10px;
+  float: right;
+  background-color: #c90817;
+}
+.player-row {
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+  height: 50px;
+  border-bottom: 1px solid #11327a;
+}
+.player-name{
+  float: left;
+  font-size: 14px;
+  margin-top: 5px;
+}
+/* Players */
+.item-ios ion-avatar ion-img, .item-ios ion-avatar img {
+  width: 52px;
+  height: auto;
+  border-radius: 0;
+  overflow: hidden;
+}

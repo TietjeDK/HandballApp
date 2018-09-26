@@ -1,0 +1,49 @@
+.top-player {
+    height: 200px;
+    text-align: center;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c80117+0,c62939+41,c65762+55,ffffff+100 */
+background: #c80117; /* Old browsers */
+background: -moz-linear-gradient(top, #c80117 0%, #c62939 41%, #c65762 55%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #c80117 0%,#c62939 41%,#c65762 55%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #c80117 0%,#c62939 41%,#c65762 55%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c80117', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    color: #fff;
+    margin-top: -20px;
+    padding-top: 10px;
+}
+.top-player h3 {
+    margin-bottom: 0;
+    /* padding-bottom: 0; */
+}
+.top-player h4 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+img.player-img {
+    display: block;
+    margin: 0 auto;
+    margin-top: -100px;
+    width: 150px;
+}
+.player-inner-stats {
+    text-align: center;
+}
+.player-stats h4 {
+    color: #09317a;
+}
+.player-stats p {
+    font-size: 12px;
+    margin-top: -10px;
+}
+.player-content {
+    margin-top: 50px;
+    padding: 15px;
+}
+.player-content h4 {
+    text-align: center;
+}
+.player-content p {
+    font-size: 16px;
+    text-align: justify;
+}

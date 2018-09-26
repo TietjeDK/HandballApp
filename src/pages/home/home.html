@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <img class="title-image" alt="logo" height="40"   src="assets/img/logo2.png" >
+    </ion-title>
+  </ion-navbar>
+  <h3 class="header-title">Kommende kampe</h3>
+</ion-header>
+
+<ion-content>
+ 
+  <!-- Beginning of the category card -->
+  <div *ngFor="let item of items" (click)="itemTapped($event, item)" class="padding_helper" color="white">
+    <div class="category__image">
+        <div class="text-center image__padding">
+          <p class="section__headline">
+              {{item.homeTeamName}} <br />
+              -
+              <br />
+              {{item.awayTeam}}
+          </p>
+          <p class="nomargin category__headline">
+            {{item.date}}
+          </p>
+        </div>
+    </div>
+  </div>
+  <!-- End of the category card -->
+
+
+</ion-content>
